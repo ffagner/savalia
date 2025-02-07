@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">Gravar dados na Planilha</h1>
+        <div class="mb-4">
+            <label for="municipio" class="block font-medium text-gray-700">Município</label>
+            <input type="text" id="municipio" class="w-full border border-gray-300 rounded-md p-2" placeholder="Digite o município">
+            <button id="carregarEscolas" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-md w-full hover:bg-blue-600">Carregar Escolas</button>
+        </div>
+        <div class="mb-4">
+            <label for="escola" class="block font-medium text-gray-700">Escola:</label>
+            <select id="escola" class="w-full border border-gray-300 rounded-md p-2">
+                <option value="">Selecione uma escola</option>
+            </select>
+        </div>
+        <div class="mb-4">
+            <label for="folderId" class="block font-medium text-gray-700">ID da Pasta no Google Drive:</label>
+            <input type="text" id="folderId" class="w-full border border-gray-300 rounded-md p-2" placeholder="Informe o ID da pasta">
+        </div>
+        <div class="mb-4">
+            <label for="planilha" class="block font-medium text-gray-700">Link da Planilha:</label>
+            <input type="text" id="planilha" class="w-full border border-gray-300 rounded-md p-2" placeholder="URL da API com os alunos">
+        </div>
+        <button id="gravarDados" class="bg-green-500 text-white px-4 py-2 rounded-md w-full hover:bg-green-600">
+            Gravar Dados
+        </button>
+        <% if (message) { %>
+            <p class="mt-4 text-center text-sm text-red-500"><%= message %></p>
+        <% } %>
+    </div>
+    
+</body>
+</html>
