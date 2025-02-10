@@ -524,6 +524,9 @@
   .static {
     position: static;
   }
+  .m-9 {
+    margin: calc(var(--spacing) * 9);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
