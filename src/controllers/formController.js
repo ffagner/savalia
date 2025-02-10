@@ -1,6 +1,6 @@
-import { fetchEscolas, fetchExternalData } from "../services/externalApiService"
-import { findSpreadsheet } from "../services/googleDriveService"
-import { saveDataToSheet } from "../services/googleSheetsService"
+import { fetchEscolas, fetchExternalData } from "../services/externalApiService.js"
+import { findSpreadsheet } from "../services/googleDriveService.js"
+import { saveDataToSheet } from "../services/googleSheetsService.js"
 
 /**
  * Exibe o formulário renderizando a página inicial.

@@ -5,7 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const credentialsPath = path.join(__dirname, "..", "..", "credentials.json");
+const credentialsPath = path.join(__dirname, "..", "config", "authKey.json");
 const credentials = JSON.parse(fs.readFileSync(credentialsPath, "utf8"));
 
 /**
